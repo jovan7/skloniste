@@ -5,3 +5,7 @@
 
 [images]
   remote_images = ["https://images.unsplash.com/.*"]
+
+[build]
+  command = "npm run build"
+  publish = "dist/skloniste/browser"
