@@ -1,18 +1,17 @@
 import {Injectable} from '@angular/core';
-import {Observable, from, map} from 'rxjs'; // <-- Import 'from' and 'map'
+import {Observable, from, map} from 'rxjs';
 import {createClient} from 'contentful';
-import {Pet} from '../../shared/models/pets.model'; // Assuming this interface is correct
+import {Pet} from '../../shared/models/pets.model';
+import {environment} from '../../../environments/environment';
 
-// Use constants for configuration, often stored in an environment file
+const CONTENTFUL_CONFIG = {
+  space: environment.space,
+  accessToken: environment.accessToken,
+};
 
 @Injectable({
   providedIn: 'root',
 })
-const CONTENTFUL_CONFIG = {
-  space: '',
-  accessToken: '',
-};
-
 export class PetsService {
   private contentfulClient = createClient(CONTENTFUL_CONFIG);
 
