@@ -1,0 +1,24 @@
+<div class="md:hidden"
+  [ngClass]="isMenuOpen() ? 'hidden' : ''">
+  <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+    <a routerLink="/"
+       class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50">
+      Home
+    </a>
+    <a routerLink="/about"
+       class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50">
+      About Us
+    </a>
+    <a routerLink="/adopt"
+       class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50">
+      Adopt
+    </a>
+    <a routerLink="/contact"
+       class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50">
+      Contact
+    </a>
+    <a routerLink="/donate"
+       class="block w-full text-left px-3 py-2 text-orange-500 font-bold">Donate Now
+    </a>
+  </div>
+</div>

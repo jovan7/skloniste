@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "name": "Bobi",
+    "type": "dog",
+    "gender": "Male",
+    "age": "2 Years",
+    "breed": "Golden Retriever Mix",
+    "size": "Large (25kg)",
+    "img": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596492784531-6e6eb5ea92f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    ],
+    "desc": "Gentle giant, loves belly rubs.",
+    "story": "Bobi was found wandering near a construction site, looking for scraps. Despite his rough start, he has a heart of gold. He loves children and gets along well with other dogs. He needs a home with a yard where he can play fetch. He is fully house-trained and knows basic commands like 'sit' and 'stay'.",
+    "tags": [
+      "Vaccinated",
+      "Friendly",
+      "Good with Kids",
+      "Neutered"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Luna",
+    "type": "cat",
+    "gender": "Female",
+    "age": "8 Months",
+    "breed": "European Shorthair",
+    "size": "Small (3kg)",
+    "img": "https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    ],
+    "desc": "Playful kitten, loves lasers.",
+    "story": "Luna was rescued from a rainstorm when she was just a few weeks old. She has been bottle-fed and is incredibly affectionate with humans. She has a ton of energy and loves chasing laser pointers and feather toys.",
+    "tags": [
+      "Sterilized",
+      "Playful",
+      "Indoor Only"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Maks",
+    "type": "dog",
+    "gender": "Male",
+    "age": "5 Years",
+    "breed": "Labrador Mix",
+    "size": "Medium",
+    "img": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    ],
+    "desc": "Calm soul, perfect for seniors.",
+    "story": "Maks is a retired soul looking for a soft rug. He walks perfectly on a leash.",
+    "tags": [
+      "Microchipped",
+      "Calm"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bella",
+    "type": "dog",
+    "gender": "Female",
+    "age": "1 Year",
+    "breed": "Border Collie Mix",
+    "size": "Medium",
+    "img": "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    ],
+    "desc": "Energetic and loves to run.",
+    "story": "Bella needs an active family who loves hiking.",
+    "tags": [
+      "Active",
+      "Smart"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Simba",
+    "type": "cat",
+    "gender": "Male",
+    "age": "3 Years",
+    "breed": "Orange Tabby",
+    "size": "Medium",
+    "img": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    ],
+    "desc": "A king of the couch.",
+    "story": "Simba is a chill cat who gets along with everyone.",
+    "tags": [
+      "Indoor",
+      "Cuddly"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Rex",
+    "type": "dog",
+    "gender": "Male",
+    "age": "4 Years",
+    "breed": "German Shepherd",
+    "size": "Large",
+    "img": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    ],
+    "desc": "Loyal protector and friend.",
+    "story": "Rex is very loyal and needs an experienced owner.",
+    "tags": [
+      "Trained",
+      "Loyal"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Nala",
+    "type": "dog",
+    "gender": "Female",
+    "age": "6 Months",
+    "breed": "Mixed Breed",
+    "size": "Small (Puppy)",
+    "img": "https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1591769225440-811ad7d6eca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    ],
+    "desc": "Puppy energy overload!",
+    "story": "Nala is full of life and needs potty training.",
+    "tags": [
+      "Puppy",
+      "Cute"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Garfield",
+    "type": "cat",
+    "gender": "Male",
+    "age": "6 Years",
+    "breed": "Persian Mix",
+    "size": "Medium",
+    "img": "https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    ],
+    "desc": "Loves food and naps.",
+    "story": "Garfield loves lasagna... just kidding. But he loves food.",
+    "tags": [
+      "Chunky",
+      "Relaxed"
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+<nav class="bg-white/80 backdrop-blur-md shadow-md fixed top-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <a routerLink="/" class="flex items-center cursor-pointer">
+        <span class="flex-shrink-0 flex items-center gap-2">
+          <i class="fa-solid fa-paw text-orange-500 text-3xl"></i>
+          <span class="font-bold text-xl tracking-tight text-gray-900">Sklonište</span>
+        </span>
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <a routerLink="/"
+           class="nav-link text-gray-600 hover:text-orange-500 transition font-medium">Home
+        </a>
+        <a routerLink="/about"
+           class="nav-link text-gray-600 hover:text-orange-500 transition font-medium">About Us
+        </a>
+        <a routerLink="/adopt"
+           class="nav-link text-gray-600 hover:text-orange-500 transition font-medium">Adopt
+        </a>
+        <a routerLink="/contact"
+           class="nav-link text-gray-600 hover:text-orange-500 transition font-medium">Contact
+        </a>
+        <a routerLink="/donate"
+           class="bg-orange-500 text-white px-6 py-2 rounded-full font-bold hover:bg-orange-600 transition shadow-lg transform hover:-translate-y-0.5">
+          <i class="fa-solid fa-heart mr-2"></i>Donate
+        </a>
+      </div>
+      <app-menu-icon class="md:hidden"></app-menu-icon>
+    </div>
+  </div>
+  <app-mobile-menu></app-mobile-menu>
+</nav>

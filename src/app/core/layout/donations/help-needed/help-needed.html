@@ -1,0 +1,24 @@
+<div class="mt-10 space-y-4">
+  <a routerLink="/donate"
+     class="inline-block bg-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-600 transition shadow-lg w-full text-center cursor-pointer">
+    Donate via PayPal
+  </a>
+
+  <div
+    class="bg-gray-800 border border-gray-700 p-4 rounded-xl flex items-center justify-between group cursor-pointer hover:border-orange-500 hover:bg-gray-750 transition"
+    onclick="navigator.clipboard.writeText('12345678900099'); alert('Bank account number copied!')">
+    <div class="flex items-center gap-4">
+      <div class="bg-gray-700 p-3 rounded-lg group-hover:bg-gray-600 transition">
+        <i class="fa-solid fa-building-columns text-orange-500 text-xl"></i>
+      </div>
+      <div class="text-left">
+        <p class="text-xs text-gray-400 uppercase tracking-wide font-bold mb-1">Local Bank Transfer (Erste)</p>
+        <p class="text-white font-mono text-lg md:text-xl font-bold tracking-wider">123-456789000-99</p>
+      </div>
+    </div>
+    <div class="hidden sm:block">
+      <span class="text-xs text-gray-500 mr-2 group-hover:text-gray-300">Click to copy</span>
+      <i class="fa-regular fa-copy text-gray-500 group-hover:text-white transition"></i>
+    </div>
+  </div>
+</div>

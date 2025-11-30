@@ -1,0 +1,116 @@
+<div
+  class="w-full relative flex flex-col md:flex-row">
+  <button
+    mat-dialog-close
+    class="absolute top-4 right-4 z-10 bg-white/50 hover:bg-white text-gray-800 rounded-full p-2 transition backdrop-blur-sm cursor-pointer">
+    <i class="fa-solid fa-xmark text-xl w-6 h-6 flex items-center justify-center"></i>
+  </button>
+
+  <div class="w-full md:w-3/5 bg-gray-50 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
+    <!-- Main Gallery Image -->
+    <div class="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg mb-4 group">
+      <img [src]="pet().cover.fields.file?.url" [alt]="pet().name"
+           class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+      <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-6 pt-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-1">{{ pet().name }}</h2>
+        <p class="text-gray-200 font-medium text-lg">{{ pet().desc }}</p>
+      </div>
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="flex gap-3 mb-8 overflow-x-auto pb-2 scrollbar-hide">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Quick Stats Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+      <div class="bg-white p-3 rounded-xl border border-gray-100 shadow-sm text-center">
+        <span class="block text-xs text-gray-400 uppercase font-bold mb-1">Gender</span>
+        <span class="font-bold text-gray-700">{{ pet().gender }}</span>
+      </div>
+      <div class="bg-white p-3 rounded-xl border border-gray-100 shadow-sm text-center">
+        <span class="block text-xs text-gray-400 uppercase font-bold mb-1">Age</span>
+        <span class="font-bold text-gray-700">{{ pet().age }}</span>
+      </div>
+      <div class="bg-white p-3 rounded-xl border border-gray-100 shadow-sm text-center">
+        <span class="block text-xs text-gray-400 uppercase font-bold mb-1">Size</span>
+        <span class="font-bold text-gray-700">{{ pet().size }}</span>
+      </div>
+    </div>
+
+    <!-- Story & Health -->
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+          <i class="fa-solid fa-book-open text-orange-500 mr-2"></i> Our Story
+        </h3>
+        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+          {{ pet().story }}
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+          <i class="fa-solid fa-user-doctor text-orange-500 mr-2"></i> Health & Status
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          @for (tag of pet().tags; track tag) {
+            <span
+              class="px-3 py-1 bg-green-100 text-green-800 text-xs font-bold rounded-full border border-green-200">{{ tag }}</span>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full md:w-2/5 bg-white p-6 md:p-8 flex flex-col justify-center border-l border-gray-100">
+    <div class="text-center mb-8">
+      <div class="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce">
+        <i class="fa-solid fa-envelope-open-text text-orange-500 text-2xl"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-900">Adoption Inquiry</h3>
+      <p class="text-gray-500 text-sm">Fall in love? Send us a message to schedule a meet-and-greet!</p>
+    </div>
+
+    <form class="space-y-4">
+      <div>
+        <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Full Name</label>
+        <input type="text" required
+               class="w-full bg-gray-50 border-gray-200 rounded-xl focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 p-3 outline-none transition"
+               placeholder="Your Name">
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Phone Number</label>
+        <input type="tel" required
+               class="w-full bg-gray-50 border-gray-200 rounded-xl focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 p-3 outline-none transition"
+               placeholder="+381 60...">
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Living Situation</label>
+        <select
+          class="w-full bg-gray-50 border-gray-200 rounded-xl focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 p-3 outline-none transition">
+          <option>House with Yard</option>
+          <option>Apartment</option>
+          <option>Farm / Large Property</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Message</label>
+        <textarea rows="3"
+                  class="w-full bg-gray-50 border-gray-200 rounded-xl focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 p-3 outline-none transition"
+                  placeholder="Tell us a bit about yourself and why you'd be a great match..."></textarea>
+      </div>
+
+      <div class="mt-auto grid grid-cols-3 gap-3">
+        <a href="tel:+381601234567" title="Call Shelter"
+           class="col-span-1 flex items-center justify-center border-2 border-gray-100 text-gray-600 font-bold py-3 rounded-xl hover:border-orange-500 hover:text-orange-500 transition bg-gray-50 hover:bg-white">
+          <i class="fa-solid fa-phone"></i></a>
+        <button type="submit"
+                class="w-full col-span-2 bg-orange-500 text-white font-bold py-4 rounded-xl hover:bg-orange-600 transition shadow-lg transform cursor-pointer">
+          Submit Application
+        </button>
+      </div>
+      <p class="text-xs text-center text-gray-400 mt-4">No commitment required. This just starts the conversation!</p>
+    </form>
+  </div>
+</div>

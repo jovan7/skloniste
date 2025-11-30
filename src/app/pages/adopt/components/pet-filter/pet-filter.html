@@ -1,0 +1,36 @@
+<form [formGroup]="filterForm"
+      class="bg-gray-100 p-4 rounded-2xl my-10 flex flex-wrap gap-4 justify-center items-center shadow-inner">
+
+  <div class="flex gap-2">
+    <button type="button"
+            class="cursor-pointer"
+            (click)="selectType('All')"
+            [ngClass]="getButtonClasses('')">
+      All
+    </button>
+
+    <button type="button"
+            class="cursor-pointer"
+            (click)="selectType('dog')"
+            [ngClass]="getButtonClasses('dog')">
+      Dogs
+    </button>
+
+    <button type="button"
+            class="cursor-pointer"
+            (click)="selectType('cat')"
+            [ngClass]="getButtonClasses('cat')">
+      Cats
+    </button>
+  </div>
+
+  <div class="h-6 w-px bg-gray-300 hidden sm:block"></div>
+
+  <select
+    formControlName="gender"
+    class="bg-white border-gray-300 rounded-lg text-sm px-4 py-2 focus:ring-orange-500 focus:border-orange-500 text-gray-600 cursor-pointer">
+    <option value="">Any Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</form>

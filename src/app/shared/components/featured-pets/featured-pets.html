@@ -1,0 +1,18 @@
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Waiting for Love</h2>
+      <p class="mt-4 text-xl text-gray-500">A few of our newest residents.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for (pet of pets(); track pet.id) {
+        <app-pet-card [pet]="pet"></app-pet-card>
+      }
+    </div>
+    <div class="mt-12 text-center">
+      <a routerLink="/adopt" class="inline-flex items-center text-orange-500 font-bold hover:underline text-lg">
+        See all animals <i class="fa-solid fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
