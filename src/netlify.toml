@@ -1,11 +1,12 @@
+[build]
+  command = "ng build"
+  publish = "dist/skloniste/browser"
+
 [[redirects]]
+  # This rule fixes "Page Not Found" on refresh
   from = "/*"
   to = "/index.html"
   status = 200
 
 [images]
   remote_images = ["https://images.unsplash.com/.*"]
-
-[build]
-  command = "npm run build"
-  publish = "dist/skloniste/browser"
