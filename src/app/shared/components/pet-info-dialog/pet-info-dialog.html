@@ -6,10 +6,10 @@
     <i class="fa-solid fa-xmark text-xl w-6 h-6 flex items-center justify-center"></i>
   </button>
 
-  <div class="w-full md:w-3/5 bg-gray-50 p-6 md:p-8 overflow-y-auto max-h-[90vh]">
-    <!-- Main Gallery Image -->
+  <div class="w-full md:w-3/5 bg-gray-50 p-6 md:p-8">
     <div class="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg mb-4 group">
-      <img [src]="pet().cover.fields.file?.url" [alt]="pet().name"
+      <img [ngSrc]="petActiveImage().fields.file?.url!" [alt]="pet().name"
+           fill
            class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
       <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-6 pt-12">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-1">{{ pet().name }}</h2>
@@ -17,12 +17,20 @@
       </div>
     </div>
 
-    <!-- Thumbnails -->
     <div class="flex gap-3 mb-8 overflow-x-auto pb-2 scrollbar-hide">
-      <!-- Populated by JS -->
+      @for (img of pet().images; track img.sys.id) {
+        <div class="relative size-20">
+          <img [ngSrc]="img.fields.file?.url!" [alt]="pet().name"
+               (click)="petActiveImage.set(img)"
+               fill
+               class="size-20 object-cover rounded-lg cursor-pointer border-2 hover:border-orange-500 transition hover:opacity-100"
+               [class.border-transparent]="petActiveImage() !== img"
+               [class.border-orange-500]="petActiveImage() === img"
+               [class.opacity-100]="petActiveImage() === img">
+        </div>
+      }
     </div>
 
-    <!-- Quick Stats Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
       <div class="bg-white p-3 rounded-xl border border-gray-100 shadow-sm text-center">
         <span class="block text-xs text-gray-400 uppercase font-bold mb-1">Gender</span>
@@ -38,7 +46,6 @@
       </div>
     </div>
 
-    <!-- Story & Health -->
     <div class="space-y-6">
       <div>
         <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">

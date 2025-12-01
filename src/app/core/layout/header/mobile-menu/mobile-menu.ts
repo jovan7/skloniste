@@ -1,13 +1,12 @@
 import {Component, inject} from '@angular/core';
-import {RouterLink} from '@angular/router';
-import {NgClass} from '@angular/common';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 import {LayoutService} from '../../../services/layout.service';
 
 @Component({
   selector: 'app-mobile-menu',
   imports: [
     RouterLink,
-    NgClass
+    RouterLinkActive
   ],
   templateUrl: './mobile-menu.html',
   standalone: true

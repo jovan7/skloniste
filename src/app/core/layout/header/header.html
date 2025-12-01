@@ -10,18 +10,23 @@
 
       <div class="hidden md:flex items-center space-x-8">
         <a routerLink="/"
+           routerLinkActive="text-orange-500"
+           [routerLinkActiveOptions]="{ exact: true }"
            class="nav-link text-gray-600 hover:text-orange-500 transition font-medium">Home
         </a>
         <a routerLink="/about"
+           routerLinkActive="text-orange-500"
            class="nav-link text-gray-600 hover:text-orange-500 transition font-medium">About Us
         </a>
         <a routerLink="/adopt"
+           routerLinkActive="text-orange-500"
            class="nav-link text-gray-600 hover:text-orange-500 transition font-medium">Adopt
         </a>
         <a routerLink="/contact"
+           routerLinkActive="text-orange-500"
            class="nav-link text-gray-600 hover:text-orange-500 transition font-medium">Contact
         </a>
-        <a routerLink="/donate"
+        <a href="https://www.paypal.com/paypalme/sklonistepirot" target="_blank"
            class="bg-orange-500 text-white px-6 py-2 rounded-full font-bold hover:bg-orange-600 transition shadow-lg transform hover:-translate-y-0.5">
           <i class="fa-solid fa-heart mr-2"></i>Donate
         </a>

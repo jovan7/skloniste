@@ -14,11 +14,14 @@
     <div class="flex gap-2 mb-3">
       <span
         class="inline-flex items-center gap-1 px-2 py-1 rounded text-xs font-semibold bg-gray-100 text-gray-600 border border-gray-200 capitalize">
-          <i class="fa-solid fa-dog"></i> {{ pet().type }}
+          <i class="fa-solid" [ngClass]="pet().type === 'dog' ? 'fa-dog' : 'fa-cat'"></i>
+        {{ pet().type }}
       </span>
       <span
-        class="inline-flex items-center gap-1 px-2 py-1 rounded text-xs font-semibold border text-blue-600 bg-blue-50 border-blue-100">
-          <i class="fa-solid fa-mars"></i> {{ pet().gender }}
+        class="inline-flex items-center gap-1 px-2 py-1 rounded text-xs font-semibold border"
+        [ngClass]="pet().gender === 'male' ? 'text-blue-600 bg-blue-50 border-blue-100' : 'text-pink-600 bg-pink-50 border-pink-100'">
+          <i class="fa-solid" [ngClass]="pet().gender === 'male' ? 'fa-mars' : 'fa-venus'"></i>
+        {{ pet().gender }}
       </span>
     </div>
     <p class="text-gray-600 mb-4 line-clamp-2 flex-grow">{{ pet().desc }}</p>
