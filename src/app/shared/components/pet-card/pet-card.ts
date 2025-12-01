@@ -2,12 +2,13 @@ import {Component, inject, input, InputSignal} from '@angular/core';
 import {Pet} from '../../models/pets.model';
 import {PetInfoDialog} from '../pet-info-dialog/pet-info-dialog';
 import {MatDialog} from '@angular/material/dialog';
-import {NgClass} from '@angular/common';
+import {NgClass, NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-pet-card',
   imports: [
-    NgClass
+    NgClass,
+    NgOptimizedImage
   ],
   templateUrl: './pet-card.html',
   standalone: true

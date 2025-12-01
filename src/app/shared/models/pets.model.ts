@@ -13,7 +13,6 @@ export interface Pet {
   desc: string;
   story: string;
   tags: string[];
-  cover: Asset;
   images: Asset[];
 }
 
