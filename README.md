@@ -1,15 +1,54 @@
-# Skloniste
+# 🐾 Sklonište
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+> A modern digital home for animal rescue and adoption.
 
+**Sklonište** is an animal rescue shelter platform built to connect pets with their forever homes. It utilizes a headless CMS for easy content management and a modern frontend for a fast, responsive user experience.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Framework:** [Angular](https://angular.dev/) (v20+)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **CMS:** [Contentful](https://www.contentful.com/)
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally.
+
+### 1. Prerequisites
+
+* Node.js (LTS version recommended)
+* npm or yarn
+
+### 2. Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone [https://github.com/your-username/skloniste.git](https://github.com/your-username/skloniste.git)
+cd skloniste
+npm install
 ## Development server
 
 To start a local development server, run:
 
-```bash
 ng serve
 ```
 
+### 3. Environment Configuration
+⚠️ Important: You must configure your Contentful credentials for the app to fetch data.
+
+Create a .env file in the root directory.
+
+Add the following keys:
+
+```
+NG_APP_TOKEN=[your_contentful_delivery_api_key]
+NG_APP_SPACE=[your_contentful_space_id]
+```
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ## Code scaffolding
