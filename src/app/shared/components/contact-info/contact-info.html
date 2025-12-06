@@ -9,6 +9,7 @@
 
     <div class="space-y-4">
       <a id="modalEmailBtn"
+         (click)="copyEmail('Email copied to clipboard: adoptions@skloniste-pirot.org')"
          href="mailto:adoptions@skloniste-pirot.org?subject=Adoption%20Inquiry%3A%20Bobi%20(ID%20%231001)&amp;body=Hello%2C%0A%0AI%20am%20interested%20in%20adopting%20Bobi.%20I%20would%20love%20to%20schedule%20a%20time%20to%20meet%20them.%0A%0AMy%20living%20situation%3A%0A-%20%5BHouse%2FApartment%5D%0A-%20%5BFenced%20Yard%3F%5D%0A%0ABest%20regards%2C"
          class="block w-full bg-orange-500 text-white font-bold py-4 rounded-xl hover:bg-orange-600 transition shadow-lg transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
         <i class="fa-regular fa-envelope"></i> Send Email Inquiry
