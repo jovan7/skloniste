@@ -69,55 +69,5 @@
       </div>
     </div>
   </div>
-
-  <div class="w-full md:w-2/5 bg-white p-6 md:p-8 flex flex-col justify-center border-l border-gray-100">
-    <div class="text-center mb-8">
-      <div class="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce">
-        <i class="fa-solid fa-envelope-open-text text-orange-500 text-2xl"></i>
-      </div>
-      <h3 class="text-2xl font-bold text-gray-900">Adoption Inquiry</h3>
-      <p class="text-gray-500 text-sm">Fall in love? Send us a message to schedule a meet-and-greet!</p>
-    </div>
-
-    <form class="space-y-4">
-      <div>
-        <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Full Name</label>
-        <input type="text" required
-               class="w-full bg-gray-50 border-gray-200 rounded-xl focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 p-3 outline-none transition"
-               placeholder="Your Name">
-      </div>
-      <div>
-        <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Phone Number</label>
-        <input type="tel" required
-               class="w-full bg-gray-50 border-gray-200 rounded-xl focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 p-3 outline-none transition"
-               placeholder="+381 60...">
-      </div>
-      <div>
-        <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Living Situation</label>
-        <select
-          class="w-full bg-gray-50 border-gray-200 rounded-xl focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 p-3 outline-none transition">
-          <option>House with Yard</option>
-          <option>Apartment</option>
-          <option>Farm / Large Property</option>
-        </select>
-      </div>
-      <div>
-        <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Message</label>
-        <textarea rows="3"
-                  class="w-full bg-gray-50 border-gray-200 rounded-xl focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 p-3 outline-none transition"
-                  placeholder="Tell us a bit about yourself and why you'd be a great match..."></textarea>
-      </div>
-
-      <div class="mt-auto grid grid-cols-3 gap-3">
-        <a href="tel:+381601234567" title="Call Shelter"
-           class="col-span-1 flex items-center justify-center border-2 border-gray-100 text-gray-600 font-bold py-3 rounded-xl hover:border-orange-500 hover:text-orange-500 transition bg-gray-50 hover:bg-white">
-          <i class="fa-solid fa-phone"></i></a>
-        <button type="submit"
-                class="w-full col-span-2 bg-orange-500 text-white font-bold py-4 rounded-xl hover:bg-orange-600 transition shadow-lg transform cursor-pointer">
-          Submit Application
-        </button>
-      </div>
-      <p class="text-xs text-center text-gray-400 mt-4">No commitment required. This just starts the conversation!</p>
-    </form>
-  </div>
+  <app-contact-info class="align-center flex"></app-contact-info>
 </div>

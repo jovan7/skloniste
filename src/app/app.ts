@@ -3,6 +3,7 @@ import {Header} from './core/layout/header/header';
 import {RouterOutlet} from '@angular/router';
 import {Footer} from './core/layout/footer/footer';
 import {Donations} from './core/layout/donations/donations';
+import {FeaturedInfo} from './shared/components/featured-info/featured-info';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import {Donations} from './core/layout/donations/donations';
     Header,
     RouterOutlet,
     Footer,
-    Donations
+    Donations,
+    FeaturedInfo
   ],
   templateUrl: './app.html',
   standalone: true,
