@@ -1,6 +1,6 @@
 @if(isMenuOpen()) {
   <div class="md:hidden">
-    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3" (click)="isMenuOpen.set(false)">
       <a routerLink="/"
          routerLinkActive="text-orange-500"
          [routerLinkActiveOptions]="{ exact: true }"
@@ -27,5 +27,4 @@
       </a>
     </div>
   </div>
-
 }
